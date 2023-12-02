@@ -23,7 +23,7 @@ const projects = [
     },
 ]
 
-export default function Portfolio() {
+export default function Project() {
     return (
         <Box>
             <Grid marginTop={"2rem"} container display={'flex'} justifyContent={'center'}>

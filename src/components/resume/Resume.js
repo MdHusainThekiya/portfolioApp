@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Box, IconButton} from "@mui/material";
 import tStyle from "./Terminal.module.scss";
 import classNames from "classnames";
@@ -7,7 +7,11 @@ import Md_Husain_Thekiya from "../../img/Md_Husain_Thekiya.jpg";
 const iconClass = "fa fa-circle";
 
 
-export default function Tech() {
+export default function Resume({setActive}) {
+
+   useEffect(() => {
+      setActive('resume')
+   }, [setActive])
 
    return (
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 
 
-export default function Tech() {
+export default function Tech({setActive}) {
 
    function aboutMeText() {
       return <>
@@ -77,6 +77,10 @@ export default function Tech() {
          <li>Problem Solving</li></ul>
       </>;
    }
+
+   useEffect(() => {
+      setActive('tech')
+   }, [setActive])
 
    return (
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>

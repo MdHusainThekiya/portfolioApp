@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Style from './Home.module.scss';
 import me from '../../img/programmerChild.png';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import {Box} from "@mui/material";
+import { Link } from 'react-router-dom';
 
 const bioBullets = [
    {
@@ -15,7 +16,7 @@ const bioBullets = [
    {
       link: '/tech',
       emoji: "💻",
-      text: "Sr.Software Developer working on MERN stack"
+      text: "Sr.Software Developer working on MERN"
    },
    {
       link: "mailto:hussainthekiya@gmail.com?subject=Let's work on something together!",
@@ -42,7 +43,11 @@ const socials = [
    },
 ]
 
-export default function Home() {
+export default function Home({setActive, loading, viewsCount}) {
+
+   useEffect(()=> {
+      setActive('home');
+   }, [setActive])
 
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
@@ -51,7 +56,7 @@ export default function Home() {
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
          <Box>
-            <h1>Hi, I'm <span className={Style.firstName}>Md Husain Thekiya</span><span className={Style.hand}>🤚</span>
+            <h1>Hi, I'm <span className={Style.firstName}>Husain Thekiya</span><span className={Style.hand}>🤚</span>
             </h1>
             <h2>I'm a software developer.</h2>
             <Box component={'ul'} p={'0.8rem'}>
@@ -60,6 +65,19 @@ export default function Home() {
                      <EmojiBullet link={bio.link} emoji={bio.emoji} text={bio.text}/>
                   </li>
                ))}
+               <li key={"uniqueViews"}>
+                  <Link to={"/"} rel="noopener noreferrer" style={{fontSize: '1rem', lineHeight: '1.5'}}>
+                     <Box component={'span'} aria-label="cheese"
+                        role="img"
+                        mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>{"🔥"}
+                     </Box>
+                     this portfolio got &nbsp;
+                        <span className={Style.firstName}>
+                           <span className={loading ? (Style.loading) : ''}>{loading ? "🟢" : viewsCount}</span>
+                        </span>
+                     &nbsp; views
+                  </Link>
+               </li>
             </Box>
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {socials.map((social, index) => (

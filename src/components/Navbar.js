@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from '../img/ht.png';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
-import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
+import { Link } from 'react-router-dom';
 
 const links = [
    // {
@@ -26,8 +26,8 @@ const links = [
    },
    {
       name: 'Project',
-      to: '/portfolio',
-      active: 'portfolio'
+      to: '/project',
+      active: 'project'
    },
    {
       name: 'Resume',
@@ -36,9 +36,7 @@ const links = [
    }
 ]
 
-export default function Navbar({darkMode, handleClick}) {
-   const location = useLocation()
-   const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
+export default function Navbar({darkMode, handleClick, active, setActive}) {
 
    return (
       <Box component={'nav'} width={'100%'}>
@@ -47,7 +45,7 @@ export default function Navbar({darkMode, handleClick}) {
               textTransform={'lowercase'} fontSize={'1rem'} marginTop={"1rem"} marginBottom={"1rem"}>
             {links.map((link, index) => (
                (link.name === "toggle")
-               ?  <li>
+               ?  <li key={index}>
                      <Toggler darkMode={darkMode} handleClick={handleClick}/>
                   </li>
                :  <li className={(link.active === active && !link.image) ? Style.active : ''} key={index}>

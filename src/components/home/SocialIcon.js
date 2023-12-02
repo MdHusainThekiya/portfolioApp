@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function SocialIcon(props) {
     const {link, icon, label} = props;
     return (
-        <a target="_blank" aria-label={label}
-           rel="noopener noreferrer" href={link}>
+        <Link aria-label={label}
+           rel="noopener noreferrer" to={link}>
             <i className={icon} aria-hidden="true"/>
-        </a>
+        </Link>
     );
 }
 
