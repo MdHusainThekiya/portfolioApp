@@ -15,11 +15,11 @@ const projects = [
     {
         image: kesta,
         live: "https://kesta.in/",
-        title: "Kesta.in (E-Comm)"
+        title: "Kesta.in (E-Comm) [nextJS, nodeJS, mongoDB, razorPay, shipRocket]"
     },
     {
         image: kestaAdmin,
-        title: "Kesta.in Admin dashboard (E-Comm)"
+        title: "Kesta.in Admin dashboard (E-Comm) [reactJS, nodeJS, mongoDB]"
     },
 ]
 

@@ -72,10 +72,8 @@ export default function Home({setActive, loading, viewsCount}) {
                         mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>{"🔥"}
                      </Box>
                      this portfolio got &nbsp;
-                        <span className={Style.firstName}>
-                           <span className={loading ? (Style.loading) : ''}>{loading ? "🟢" : viewsCount}</span>
-                        </span>
-                     &nbsp; views
+                        <span className={loading ? Style.loading : Style.firstName}>{loading ? "🟢" : viewsCount}</span>
+                     &nbsp; unique views
                   </Link>
                </li>
             </Box>
