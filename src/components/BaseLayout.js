@@ -13,7 +13,7 @@ import {Box, Grid} from "@mui/material";
 export default function BaseLayout() {
    let location = useLocation()
 
-   let [darkMode, setDarkMode] = useState(false);
+   let [darkMode, setDarkMode] = useState(true);
    let [viewsCount, setViewsCount] = useState(0);
    let [loading, setLoading] = useState(true);
    let [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
