@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/programmerChild.png';
+import me from '../../img/programmer.png';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
@@ -52,7 +52,7 @@ export default function Home({setActive, loading, viewsCount}) {
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
-         <Box className={classNames(Style.avatar, Style.shadowed)} component={'img'} alt={'md husain thekiya'} src={me} width={{xs: '36vh', md: '41vh'}}
+         <Box className={classNames(Style.avatar, Style.shadowed)} component={'img'} alt={'md husain thekiya'} src={me} width={{xs: '100ch', md: '41vh'}}
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
          <Box>
