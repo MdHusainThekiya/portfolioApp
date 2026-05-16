@@ -16,7 +16,7 @@ export default function Resume({setActive}) {
    return (
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
          <Box component={'section'} className={classNames(tStyle.terminal, tStyle.shadowed)}
-           width={{xs: '80%', md: '75%'}} borderRadius={'0.5rem'} mb={'4rem'}>
+           width={{xs: '95%', sm: '90%', md: '75%'}} borderRadius={'0.5rem'} mb={'4rem'}>
          <Box sx={{backgroundColor: '#8c8c8c'}} p={'0.5rem'} borderRadius={'0.5rem 0.5rem 0 0'}
               fontSize={'1rem'}>
             <div style={{display : 'flex', justifyContent : 'space-between'}}>
@@ -32,9 +32,9 @@ export default function Resume({setActive}) {
                </div>
             </div>
          </Box>
-            <Box py={{xs: '1rem', md: '2rem'}} px={{xs: '2rem', md: '3rem'}} borderRadius={'0 0 0.5rem 0.5rem'}
-               sx={{backgroundColor: '#27242f'}} fontSize={'1.5rem'} fontFamily={'Courier New, Courier, monospace'}>
-               <img src={Md_Husain_Thekiya}></img>
+            <Box py={{xs: '0.75rem', md: '2rem'}} px={{xs: '0.5rem', md: '3rem'}} borderRadius={'0 0 0.5rem 0.5rem'}
+               sx={{backgroundColor: '#27242f', overflowX: 'auto'}} fontSize={'1.5rem'} fontFamily={'Courier New, Courier, monospace'}>
+               <img src={Md_Husain_Thekiya} style={{width: '100%', height: 'auto', display: 'block'}}></img>
             </Box>
          </Box>
       </Box>

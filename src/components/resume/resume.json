@@ -1,0 +1,202 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "awards": "",
+    "skills": "Skills",
+    "work": "Experience",
+    "projects": "Projects"
+  },
+  "basics": {
+    "name": "Md Husain H. Thekiya",
+    "email": "hussainthekiya@gmail.com",
+    "location": {
+      "address": "Mumbai, Maharashtra"
+    }
+  },
+  "education": [
+    {
+      "location": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "gpa": ""
+    }
+  ],
+  "work": [
+    {
+      "position": "Software Engineer - II",
+      "website": "https://shaadi.com",
+      "highlights": [
+        "Migrated legacy PHP APIs to scalable Node.js/TypeScript microservices",
+        "Refactored 19+ cron jobs to AWS Lambda with Kafka/SNS/SQS event-driven processing, reducing DB load by 15–20% and centralizing job monitoring via AWS dashboards",
+        "Rebuilt lead gen, churn prediction & distribution workflows using AWS Step Functions (Node.js + MySQL) in collaboration with Data Science, improving lead allocation accuracy by 8–10%",
+        "Re-architected VIPShaadi post-payment pipeline from 10-min cron jobs to real-time AWS Lambda processing with DLQ fault tolerance, reducing order failures and improving fulfillment speed"
+      ],
+      "company": "Shaadi.com",
+      "location": "Mumbai",
+      "startDate": "Nov 2024",
+      "endDate": "Present"
+    },
+    {
+      "position": "Senior Software Developer",
+      "website": "",
+      "highlights": [
+        "Lead Product Development Team",
+        "Worked on rebuilding entire product as per multi-tenant architecture, Transformed API-driven IPC between microservices into an event-driven IPC using Apache Kafka, WebSocket.",
+        "Developed Node.js libraries that follow multi-tenancy architecture for accessing MongoDB, MySQL, and Redis databases over Kafka.",
+        "Build a data pipeline using debezium mysql connector and kafka connect for data engineering to create reports, charts and dashboars in react.js"
+      ],
+      "company": "SlashRTC Software Services pvt. ltd",
+      "location": "Mumbai",
+      "startDate": "April 2023",
+      "endDate": "Oct 2024"
+    },
+    {
+      "highlights": [
+        "Rotational working on following departments and become lead from OCT 2022",
+        "Customer Deliveries - build new customise features / reports / APIs for product",
+        "L3 Department - debugging and fixing code level issues, live production / downtime issues",
+        "Product Development - enhance existing features / reports / APIs of product"
+      ],
+      "company": "SlashRTC Software Services pvt. ltd",
+      "position": "Jr. Software Developer",
+      "location": "Mumbai",
+      "startDate": "June 2022",
+      "endDate": "March 2023"
+    },
+    {
+      "highlights": [
+        "Internship project involved building the authentication module (user registration, login, forgot password, and login with OTP)"
+      ],
+      "position": "Software Developer Intern",
+      "company": "SlashRTC Software Services pvt. ltd",
+      "location": "Mumbai",
+      "startDate": "March 2022",
+      "endDate": "May 2022"
+    },
+    {
+      "highlights": [
+        "Managing the retail channel sales through franchises, distributor, dealers & sub-dealers. Projects through Architects & Interiors. Planning & Managing supply of goods according to sales orders.",
+        "I was intern - Area Sales Manager between period April 2021 to June 2021"
+      ],
+      "company": "Modernizing Trends pvt ltd",
+      "position": "Area Sales Manager - plumbing division",
+      "location": "Mumbai",
+      "startDate": "April 2021",
+      "endDate": "Feb 2022"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Javascript (ES5, ES6)",
+        "Php",
+        "Lua",
+        "Golang (basic)",
+        "HTML",
+        "Tailwind CSS",
+        "Core Java (basic)"
+      ],
+      "name": "Programming"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Node.js",
+        "Express.js",
+        "Restify",
+        "React.Js",
+        "Next.Js",
+        "PHP Codeigniter"
+      ],
+      "name": "Frameworks"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Mysql",
+        "MongoDB (NoSql)",
+        "Redis",
+        "Elasticsearch (basics)"
+      ],
+      "name": "Databases"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "kafka.js",
+        "kafka connect",
+        "dabezium",
+        "RabbitMQ",
+        "webSocket",
+        "socket.io",
+        "REST APIs",
+        "AWS"
+      ],
+      "name": "Tech"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "GIT",
+        "Linux",
+        "Docker",
+        "Shell script",
+        "SFTP",
+        "Lambda",
+        "SNS",
+        "SQS"
+      ],
+      "name": "Devops"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Good communication",
+        "Critical thinking",
+        "Team collaboration",
+        "Multitasking",
+        "Problem Solving"
+      ],
+      "name": "Others"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "Next JS",
+        "Tailwind CSS",
+        "React JS",
+        "Javascript",
+        "Node JS",
+        "Mongoose",
+        "MongoDB",
+        "PhonePe",
+        "PaymentGateway",
+        "Pickrr Shipping Gateway"
+      ],
+      "name": "E-commerce marketplace to sell mobile covers",
+      "url": "https://kesta.in ||  https://admin.kesta.in",
+      "description": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "projects",
+    "education",
+    "skills",
+    "awards"
+  ]
+}
