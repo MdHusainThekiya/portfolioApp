@@ -34,7 +34,7 @@ export default function Resume({setActive}) {
          </Box>
             <Box py={{xs: '0.75rem', md: '2rem'}} px={{xs: '0.5rem', md: '3rem'}} borderRadius={'0 0 0.5rem 0.5rem'}
                sx={{backgroundColor: '#27242f', overflowX: 'auto'}} fontSize={'1.5rem'} fontFamily={'Courier New, Courier, monospace'}>
-               <img src={Md_Husain_Thekiya} style={{width: '100%', height: 'auto', display: 'block'}}></img>
+               <img src={Md_Husain_Thekiya} alt={'Md Husain Thekiya Resume'} style={{width: '100%', height: 'auto', display: 'block'}}></img>
             </Box>
          </Box>
       </Box>

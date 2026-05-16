@@ -48,7 +48,7 @@ export default function BaseLayout() {
             console.log(`[${__filename}]::error::`, typeof(error), error);
          })
          .finally(() => {
-            setLoading(!loading);
+            setLoading(l => !l);
          })
 
    }, [setActive, setLoading])

@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import logo from '../img/ht.png';
+import React from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "./home/Toggler";
 import {Box} from "@mui/material";
